@@ -11,10 +11,10 @@ function slice(data, start, end) {
   let arr = []
   let i = 0;
   while( i < data.length) {
-    i++
     if (i >= start && i < end) {
       arr.push(data[i])
     }
+    i++
   }
   return arr
 }
