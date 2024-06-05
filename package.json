@@ -1,0 +1,25 @@
+{
+  "name": "p0_challenge_3_slice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "reporters": [
+      "default",
+      "hacktiv8-reporter"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "hacktiv8-reporter": "^1.1.3"
+  },
+  "dependencies": {
+    "hacktiv8-restriction": "^1.0.13"
+  }
+}
