@@ -10,7 +10,8 @@
     "reporters": [
       "default",
       "hacktiv8-reporter"
-    ]
+    ],
+    "verbose": true
   },
   "keywords": [],
   "author": "",

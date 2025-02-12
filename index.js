@@ -1,22 +1,21 @@
 function slice(data, start, end) {
-
   if (!data) {
-    return "Invalid data"
+    return "Invalid data";
   } else if (!start && !end) {
-    return data
+    return data;
   } else if (end === undefined) {
-    end = data.length
+    end = data.length;
   }
 
-  let arr = []
+  let arr = [];
   let i = 0;
-  while( i < data.length) {
+  while (i < data.length) {
     if (i >= start && i < end) {
-      arr.push(data[i])
+      arr.push(data[i]);
     }
-    i++
+    i++;
   }
-  return arr
+  return arr;
 }
 
 console.log(slice(["ant", "bison", "camel", "duck", "elephant"], 2)); // [ 'camel', 'duck', 'elephant' ]
@@ -25,5 +24,17 @@ console.log(slice(["ant", "bison", "camel", "duck", "elephant"], 1, 5)); // [ 'b
 console.log(slice(["ant", "bison", "camel", "duck", "elephant"])); //[ 'ant', 'bison', 'camel', 'duck', 'elephant' ]
 console.log(slice(["ant", "bison", "camel", "duck", "elephant"], 20)); //[]
 console.log(slice()); //Invalid data
+
+//output harusnya seperti ini
+//[ "camel", "duck", "elephant" ]
+//[ "camel", "duck" ]
+//[ "bison", "camel", "duck", "elephant" ]
+//[ "ant", "bison", "camel", "duck", "elephant" ]
+//[]
+//Invalid data
+
+//selesaikan masalah yang ada,
+//lalu jelaskan fungsi ini untuk apa,
+//dan apa yang salah, dan cara memperbaikinya
 
 module.exports = slice;
